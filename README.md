@@ -5,23 +5,28 @@ Anggota Kelompok:
 2. Hana Machmudah       05111940000072
 3. Ahmad Fadillah       05111940000155
 
-## **No. 1 Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!**
+## **No. 1**
+### Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 ### Jawaban No. 1
 
 
-## **No. 2 Temukan paket dari web-web yang menggunakan basic authentication method!**
+## **No. 2**
+### Temukan paket dari web-web yang menggunakan basic authentication method!
 ### Jawaban No. 2
 
 
-## **No. 3 Ikuti perintah di `basic.ichimarumaru.tech!` Username dan password bisa didapatkan dari file `.pcapng`!**
+## **No. 3**
+### Ikuti perintah di `basic.ichimarumaru.tech!` Username dan password bisa didapatkan dari file `.pcapng`!
 ### Jawaban No. 3
  
  
-## **No. 4  Temukan paket `mysql` yang mengandung perintah query `select`!**
+## **No. 4**
+### Temukan paket `mysql` yang mengandung perintah query `select`!
 ### Jawaban No. 4
 
 
-#### **No. 5  Login ke `portal.ichimarumaru.tech` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file `.pcap`!**
+#### **No. 5**
+### Login ke `portal.ichimarumaru.tech` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file `.pcap`!
 ### Jawaban No. 5
 
 
@@ -124,22 +129,27 @@ Didapatkan Isi dari file `secret.zip`.
 ![10f](https://user-images.githubusercontent.com/66562311/134390438-0a0ba735-aad4-4dc1-a2c2-8d2e901d0b4a.png)
 
 
-## **No. 11  Filter sehingga wireshark hanya mengambil paket yang berasal dari `port 80`!**
+## **No. 11**
+### Filter sehingga wireshark hanya mengambil paket yang berasal dari `port 80`!
 ### Jawaban No. 11
 
 
-## **No. 12  Filter sehingga wireshark hanya mengambil paket yang mengandung `port 21`!**
+## **No. 12**
+### Filter sehingga wireshark hanya mengambil paket yang mengandung `port 21`!
 ### Jawaban No. 12
 
 
-## **No. 13  Filter sehingga wireshark hanya menampilkan paket yang menuju `port 443`!**
+## **No. 13**
+### Filter sehingga wireshark hanya menampilkan paket yang menuju `port 443`!
 ### Jawaban No. 13
 
 
-## **No. 14 Filter sehingga wireshark hanya mengambil paket yang tujuannya ke `kemenag.go.id`!**
+## **No. 14**
+### Filter sehingga wireshark hanya mengambil paket yang tujuannya ke `kemenag.go.id`!
 ### Jawaban No. 14
 
 
-## **No. 15 Filter sehingga wireshark hanya mengambil paket yang berasal dari `ip` kalian!**
+## **No. 15**
+### Filter sehingga wireshark hanya mengambil paket yang berasal dari `ip` kalian!
 ### Jawaban No. 15
 
