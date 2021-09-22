@@ -21,16 +21,39 @@ Anggota Kelompok:
 ### Jawaban No. 4
 
 
-## **No. 5  Login ke `portal.ichimarumaru.tech` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file `.pcap`!**
+#### **No. 5  Login ke `portal.ichimarumaru.tech` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file `.pcap`!**
 ### Jawaban No. 5
 
 
-## **No. 6 ari username dan password ketika melakukan login ke FTP Server!**
+## **No. 6**
+### ari username dan password ketika melakukan login ke FTP Server!
 ### Jawaban No. 6
+Membuka file wireshark `6-7.pcap`
+Mencari Username dengan menggunakan filter `tcp contains "USER"`, sehingga didapatkan File transfer Protocol (FTP) USER `secretuser`
+![Screenshot (93)](https://user-images.githubusercontent.com/66562311/134371827-e1d8a804-3caf-4bf9-ba19-1d5a6248975e.png)
+
+Mencari PAssword menggunakan filter `tcp contains "PASS"`, sehingga didapatkan File Transfer Protocol (FTP) PASS adalah `aku.pengen.pw.aja`
+![Screenshot (94)](https://user-images.githubusercontent.com/66562311/134371951-24498df5-c82f-4923-abf4-fce12b7e86cb.png)
 
 
-## **No. 7 Ada 500 file zip yang disimpan ke FTP Server dengan nama `0.zip, 1.zip, 2.zip, ..., 499.zip`. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")**
+## **No. 7** 
+### Ada 500 file zip yang disimpan ke FTP Server dengan nama `0.zip, 1.zip, 2.zip, ..., 499.zip`. Simpan dan Buka file pdf tersebut. `(Hint = nama pdf-nya "Real.pdf")`**
 ### Jawaban No. 7
+Membuka file wireshark `6-7.pcap`
+Mennggunakan filter `frame contains "Real.pdf"`
+<img width="960" alt="7a" src="https://user-images.githubusercontent.com/66562311/134377132-7ae56c0c-1e83-430e-a4fa-5e3dd39308b5.PNG">
+
+Kemudian klik kanan pilih `follow` kemudian pilih `TCP Stream`
+![7b](https://user-images.githubusercontent.com/66562311/134378824-030ae48c-2424-42f0-b6a9-110f66d43f01.png)
+
+Pilih show data `Raw`
+![7c](https://user-images.githubusercontent.com/66562311/134379007-8dfe3b0d-acb8-4a75-90be-066ce691414b.png)
+
+Menyimpan file dengan format `pdf`
+![7d](https://user-images.githubusercontent.com/66562311/134379126-bdee097b-c037-43d8-9c7c-e241a1111de2.png)
+
+Membuka file
+<img width="960" alt="7e" src="https://user-images.githubusercontent.com/66562311/134379190-60825c49-5846-43d9-a17f-8b43ee738c33.PNG">
 
 
 ## **No. 8 Cari paket yang menunjukan pengambilan file dari FTP tersebut!**
