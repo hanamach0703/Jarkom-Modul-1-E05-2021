@@ -53,7 +53,7 @@ Menyimpan file dengan format `pdf`
 ![7d](https://user-images.githubusercontent.com/66562311/134379126-bdee097b-c037-43d8-9c7c-e241a1111de2.png)
 
 Membuka file
-<img width="960" alt="7e" src="https://user-images.githubusercontent.com/66562311/134379190-60825c49-5846-43d9-a17f-8b43ee738c33.PNG">
+<img width="450" height="350" allign=center alt="7e" src="https://user-images.githubusercontent.com/66562311/134379190-60825c49-5846-43d9-a17f-8b43ee738c33.PNG">
 
 
 ## **No. 8 Cari paket yang menunjukan pengambilan file dari FTP tersebut!**
