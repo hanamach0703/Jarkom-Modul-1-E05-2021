@@ -81,7 +81,7 @@ Membuka file yang telah di save.
 ### Jawaban No. 8
 
 Membuka file wireshark `8-10.pcap`
-Melakukan filter `tcp-data.command == "RETR"` dan tidak ditemukan paket tersebut.
+Melakukan filter `tcp-data.command == "RETR"` untuk menemukan paket yang menunjukkan pengmabilan file dari FTP, namun tidak ditemukan paket tersebut.
 
 ![8a](https://user-images.githubusercontent.com/66562311/134467422-4d5727b3-4705-47aa-9a61-aaa3c6d7fc09.png)
 
