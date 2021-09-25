@@ -8,33 +8,67 @@ Anggota Kelompok:
 ## **No. 1**
 ### Sebutkan webserver yang digunakan pada "ichimarumaru.tech"!
 ### Jawaban No. 1
-
-
-
+Pastikan `ichimarumaru.tech` sudah terbuka pada web browser pilihan. Pilih koneksi jaringan yang sedang digunakan pada `capture interface` dan kosongkan `capture filter`. Akan muncul seluruh hasil capture, pada `display filter` masukan filter berikut.
+```
+http.host=="ichimarumaru.tech"
+```
+<!-- foto 1-1 -->
+Filter diatas akan menampilkan seluruh paket yang menuju atau berasal dari `ichimarumaru.tech` seperti berikut.
+<!-- foto 1-2 -->
+<!-- foto 1-3 -->
+Klick kanan pada salah satu paket, lalu pilih `Follow` kemudian pilih `TCP Stream` maka akan didapati bahwa webserver yang digunakan adalah `Nginx`
 ## **No. 2**
 ### Temukan paket dari web-web yang menggunakan basic authentication method!
 ### Jawaban No. 2
-
-
+Pastikan `ichimarumaru.tech` sudah terbuka pada web browser pilihan. Ketika muncul situs yang meminta kredensial, lakukan login dengan kredensial bebas (ngasal).
+<!-- foto 2-1 -->
+Pilih koneksi jaringan yang sedang digunakan pada `capture interface` dan kosongkan `capture filter`. Akan muncul seluruh hasil capture, pada `display filter` masukan filter berikut.
+```
+http.host=="basic.ichimarumaru.tech"
+```
+Pilih paket paling bawah, lalu buka atribut `Hypertext Trasnfer Protokol`. Akan terlihat website tersebut menggunakan `Authorization: Basic` serta `token` dan `string` kredensial yang kita masukan tadi.
+<!-- foto 2-2 -->
 
 ## **No. 3**
 ### Ikuti perintah di `basic.ichimarumaru.tech!` Username dan password bisa didapatkan dari file `.pcapng`!
 ### Jawaban No. 3
- 
- 
- 
+Pada `basic.ichimarumaru.tech` terlihat tulisan yang menyebutkan `only network practitioners can continue`. Buka file `1-5.pcapng`, lalu akan mucncul window wireshark baru yang berisi paket yang di-`capture`. Pada display filter, masukan string.
+```
+http.host contains "basic.ichimarumaru.tech"
+```
+<!-- foto 3-1 -->
+Akan muncul paket yang terkait dengan `basic.ichimarumaru.tech` yang mana bisa beragam hal (source, destination atau lainnya), lalu pilih `meme.png` dan buka atribut `Hypertext Transfer Protocol` buka sub-atribut `Authorization` dan tertampil `string` kredensial.
+<!-- foto 3-2 -->
+Masukan string tersebut ke kredensial `basic.ichimarumaru.tech`
+<!-- foto 3-3 -->
+Akan muncul pertanyaan dan diisi dengan sebenar - benarnya.
+<!-- foto 3-4 -->
 ## **No. 4**
 ### Temukan paket `mysql` yang mengandung perintah query `select`!
 ### Jawaban No. 4
+Masih di file yang sama, masukan `string` berikut ke display filter
+```
+frame contains "select"
+```
+<!-- foto 4-1 -->
+Akan muncul dua paket, tiap paket dibuka atribut `MySQL Protocol` dan sub-atribut `Request Command Query`. Terlihat dua `query` berikut.
 
-
+<!-- foto 4-2 -->
+<!-- foto 4-3 -->
 
 #### **No. 5**
 ### Login ke `portal.ichimarumaru.tech` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file `.pcap`!
 ### Jawaban No. 5
-
-
-
+Masih di file yang sama, masukan `string` berikut ke display filter
+```
+frame contains "INSERT"
+```
+Akan muncul satu paket,buka atribut `MySQL Protocol` dan sub-atribut `Request Command Query`. Terlihat `value` dari `INSERT` berikut.
+<!-- foto 5-1 -->
+Masukan `string` tersebut ke `portal.ichimarumaru.tech` sesuai dengan atributnya (username:password[tanpa md5()]).
+<!-- foto 5-2 -->
+Akan muncul pertanyaan tertentu dan jawab dengan benar
+<!-- foto 5-3 -->
 ## **No. 6**
 ### Cari username dan password ketika melakukan login ke FTP Server!
 
