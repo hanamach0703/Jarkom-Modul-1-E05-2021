@@ -217,7 +217,7 @@ src hst port 80
 ```
 pada capture filter
 
-![Foto 11](/img/No. 11/11.JPG)
+![Foto 11](/img/No._11/11.JPG)
 
 
 
@@ -243,7 +243,7 @@ tcp.dstport == 443
 ```
 pada display filter
 
-![Foto 13](/img/No. 13/13.JPG)
+![Foto 13](/img/No._13/13.JPG)
 
 
 
@@ -258,7 +258,7 @@ dst hst kemenag.co.id
 ```
 pada capture filter 
 
-![Foto 14](/img/No. 14/14.JPG)
+![Foto 14](/img/No._14/14.JPG)
 
 
 ## **No. 15**
@@ -271,6 +271,6 @@ src hst [ip]
 ```
 pada capture filter menurut ip masing-masing
 
-![Foto 15](/img/No. 15/no 15 padil.JPG)
+![Foto 15](/img/No._15/no_15_padil.JPG)
 
 
