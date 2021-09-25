@@ -13,21 +13,30 @@ Pastikan `ichimarumaru.tech` sudah terbuka pada web browser pilihan. Pilih konek
 http.host=="ichimarumaru.tech"
 ```
 <!-- foto 1-1 -->
+![1-1](https://user-images.githubusercontent.com/74223938/134753872-ff2b7778-d920-45ea-96e5-7316541f19a8.png)
+
 Filter diatas akan menampilkan seluruh paket yang menuju atau berasal dari `ichimarumaru.tech` seperti berikut.
 <!-- foto 1-2 -->
+![1-2](https://user-images.githubusercontent.com/74223938/134753882-eb3c430f-dca8-4eea-8cd3-f38632a4d874.png)
+
 <!-- foto 1-3 -->
+![1-3](https://user-images.githubusercontent.com/74223938/134753884-0c6e19ab-f3d3-4104-a9ca-229ce406f2eb.png)
+
 Klick kanan pada salah satu paket, lalu pilih `Follow` kemudian pilih `TCP Stream` maka akan didapati bahwa webserver yang digunakan adalah `Nginx`
 ## **No. 2**
 ### Temukan paket dari web-web yang menggunakan basic authentication method!
 ### Jawaban No. 2
 Pastikan `ichimarumaru.tech` sudah terbuka pada web browser pilihan. Ketika muncul situs yang meminta kredensial, lakukan login dengan kredensial bebas (ngasal).
 <!-- foto 2-1 -->
+![2-1](https://user-images.githubusercontent.com/74223938/134753888-9928f4c1-cd39-49b6-8daa-c956b0d97f68.png)
+
 Pilih koneksi jaringan yang sedang digunakan pada `capture interface` dan kosongkan `capture filter`. Akan muncul seluruh hasil capture, pada `display filter` masukan filter berikut.
 ```
 http.host=="basic.ichimarumaru.tech"
 ```
 Pilih paket paling bawah, lalu buka atribut `Hypertext Trasnfer Protokol`. Akan terlihat website tersebut menggunakan `Authorization: Basic` serta `token` dan `string` kredensial yang kita masukan tadi.
 <!-- foto 2-2 -->
+![2-2](https://user-images.githubusercontent.com/74223938/134753890-cffd2c1e-b79b-4bb2-a4a3-ede6144d814c.png)
 
 ## **No. 3**
 ### Ikuti perintah di `basic.ichimarumaru.tech!` Username dan password bisa didapatkan dari file `.pcapng`!
@@ -37,12 +46,20 @@ Pada `basic.ichimarumaru.tech` terlihat tulisan yang menyebutkan `only network p
 http.host contains "basic.ichimarumaru.tech"
 ```
 <!-- foto 3-1 -->
+![3-1](https://user-images.githubusercontent.com/74223938/134753893-964ee4cc-0fc4-4dbf-92a3-ba4d2edb1c30.png)
+
 Akan muncul paket yang terkait dengan `basic.ichimarumaru.tech` yang mana bisa beragam hal (source, destination atau lainnya), lalu pilih `meme.png` dan buka atribut `Hypertext Transfer Protocol` buka sub-atribut `Authorization` dan tertampil `string` kredensial.
 <!-- foto 3-2 -->
+![3-2](https://user-images.githubusercontent.com/74223938/134753898-7e7c56c8-a1b0-4795-9068-88b8cd901989.png)
+
 Masukan string tersebut ke kredensial `basic.ichimarumaru.tech`
 <!-- foto 3-3 -->
+![3-3](https://user-images.githubusercontent.com/74223938/134753902-9d7cdee5-c6b9-42c4-a0e7-5ca7a213aaf5.png)
+
 Akan muncul pertanyaan dan diisi dengan sebenar - benarnya.
 <!-- foto 3-4 -->
+![3-4](https://user-images.githubusercontent.com/74223938/134753905-50e937e8-915b-4d6c-8a3d-bc2a914df8c4.png)
+
 ## **No. 4**
 ### Temukan paket `mysql` yang mengandung perintah query `select`!
 ### Jawaban No. 4
@@ -51,10 +68,15 @@ Masih di file yang sama, masukan `string` berikut ke display filter
 frame contains "select"
 ```
 <!-- foto 4-1 -->
+![4-1](https://user-images.githubusercontent.com/74223938/134753907-cf415a12-3e2d-491b-a023-e39398892a83.png)
+
 Akan muncul dua paket, tiap paket dibuka atribut `MySQL Protocol` dan sub-atribut `Request Command Query`. Terlihat dua `query` berikut.
 
 <!-- foto 4-2 -->
+![4-2](https://user-images.githubusercontent.com/74223938/134753911-c9848d64-6b93-4157-97ef-e58fbba9e93c.png)
+
 <!-- foto 4-3 -->
+![4-3](https://user-images.githubusercontent.com/74223938/134753912-3e019a5c-3667-4444-b407-f1d4ce78eb7c.png)
 
 #### **No. 5**
 ### Login ke `portal.ichimarumaru.tech` kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file `.pcap`!
@@ -65,10 +87,16 @@ frame contains "INSERT"
 ```
 Akan muncul satu paket,buka atribut `MySQL Protocol` dan sub-atribut `Request Command Query`. Terlihat `value` dari `INSERT` berikut.
 <!-- foto 5-1 -->
+![5-1](https://user-images.githubusercontent.com/74223938/134753916-c41d3b35-e478-4ca9-a403-78734ac410c3.png)
+
 Masukan `string` tersebut ke `portal.ichimarumaru.tech` sesuai dengan atributnya (username:password[tanpa md5()]).
 <!-- foto 5-2 -->
+![5-2](https://user-images.githubusercontent.com/74223938/134753918-cfce76a4-7360-4380-8299-0878c8b16f17.png)
+
 Akan muncul pertanyaan tertentu dan jawab dengan benar
 <!-- foto 5-3 -->
+![5-3](https://user-images.githubusercontent.com/74223938/134753923-561d8729-a0bf-4bf5-9864-462f144c4027.png)
+
 ## **No. 6**
 ### Cari username dan password ketika melakukan login ke FTP Server!
 
