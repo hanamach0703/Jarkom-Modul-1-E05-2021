@@ -217,7 +217,7 @@ src hst port 80
 ```
 pada capture filter
 
-![Foto 11](/img/No._11/11.JPG)
+![Foto 11](https://github.com/hanamach0703/Jarkom-Modul-1-E05-2021/blob/main/img/No.%2011/11.JPG?raw=true)
 
 
 
