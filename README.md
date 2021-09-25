@@ -211,11 +211,23 @@ Didapatkan Isi dari file `secret.zip`.
 ### Filter sehingga wireshark hanya mengambil paket yang berasal dari `port 80`!
 ### Jawaban No. 11
 
+Untuk nomor 11 kita dapat menuliskan 
+```
+src hst port 80
+```
+pada capture filter
+
 
 
 ## **No. 12**
 ### Filter sehingga wireshark hanya mengambil paket yang mengandung `port 21`!
 ### Jawaban No. 12
+
+Untuk nomor 12 kita dapat menuliskan
+```
+hst port 21
+```
+pada capture filter
 
 
 
@@ -223,16 +235,35 @@ Didapatkan Isi dari file `secret.zip`.
 ### Filter sehingga wireshark hanya menampilkan paket yang menuju `port 443`!
 ### Jawaban No. 13
 
+Untuk nomor 12 kita dapat menuliskan
+```
+tcp.dstport == 443
+```
+pada display filter
+
 
 
 ## **No. 14**
 ### Filter sehingga wireshark hanya mengambil paket yang tujuannya ke `kemenag.go.id`!
 ### Jawaban No. 14
 
+Pertama-tama kita buka website `kemenag.co.id`,
+kemudian sebelum meng-capture kita tuliskan 
+```
+dst hst kemenag.co.id
+```
+pada capture filter 
+
 
 
 ## **No. 15**
 ### Filter sehingga wireshark hanya mengambil paket yang berasal dari `ip` kalian!
 ### Jawaban No. 15
+
+Untuk nomor 15 kita hanya perlu menulis
+```
+src hst [ip]
+```
+pada capture filter menurut ip masing-masing
 
 
