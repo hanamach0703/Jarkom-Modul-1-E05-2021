@@ -243,7 +243,7 @@ tcp.dstport == 443
 ```
 pada display filter
 
-![Foto 13](/img/No._13/13.JPG)
+![Foto 13](https://github.com/hanamach0703/Jarkom-Modul-1-E05-2021/blob/main/img/No.%2013/13.JPG?raw=true)
 
 
 
@@ -258,7 +258,7 @@ dst hst kemenag.co.id
 ```
 pada capture filter 
 
-![Foto 14](/img/No._14/14.JPG)
+![Foto 14](https://github.com/hanamach0703/Jarkom-Modul-1-E05-2021/blob/main/img/No.%2014/14.JPG?raw=true)
 
 
 ## **No. 15**
@@ -271,6 +271,6 @@ src hst [ip]
 ```
 pada capture filter menurut ip masing-masing
 
-![Foto 15](/img/No._15/no_15_padil.JPG)
+![Foto 15](https://github.com/hanamach0703/Jarkom-Modul-1-E05-2021/blob/main/img/No.%2015/no%2015%20padil.JPG?raw=true)
 
 
