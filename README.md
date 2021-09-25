@@ -217,6 +217,8 @@ src hst port 80
 ```
 pada capture filter
 
+![Foto 11](/img/No. 11/11.JPG)
+
 
 
 ## **No. 12**
@@ -235,11 +237,13 @@ pada capture filter
 ### Filter sehingga wireshark hanya menampilkan paket yang menuju `port 443`!
 ### Jawaban No. 13
 
-Untuk nomor 12 kita dapat menuliskan
+Untuk nomor 13 kita dapat menuliskan
 ```
 tcp.dstport == 443
 ```
 pada display filter
+
+![Foto 13](/img/No. 13/13.JPG)
 
 
 
@@ -254,6 +258,7 @@ dst hst kemenag.co.id
 ```
 pada capture filter 
 
+![Foto 14](/img/No. 14/14.JPG)
 
 
 ## **No. 15**
@@ -265,5 +270,7 @@ Untuk nomor 15 kita hanya perlu menulis
 src hst [ip]
 ```
 pada capture filter menurut ip masing-masing
+
+![Foto 15](/img/No. 15/no 15 padil.JPG)
 
 
